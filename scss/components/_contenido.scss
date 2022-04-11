@@ -1,0 +1,31 @@
+button{
+    border: 0px;
+    background-color: rgb(220, 20, 60);;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(129, 13, 36);
+    transition: 0.5s !important;
+}
+.text{
+    color: white;
+}
+.boton_enviar{
+    @extend button;
+    background-color: #232323;
+}
+.centrar{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+
+}

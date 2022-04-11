@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'montserrat';
+  src: url(../assets/fonts/montserrat.ttf); }
+
+* {
+  font-family: 'montserrat'; }
+
+body {
+  background-color: #232323;
+  color: #ffffff; }
+
+button, .boton_enviar {
+  border: 0px;
+  background-color: crimson;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer; }
+
+button:hover, .boton_enviar:hover {
+  background-color: #810d24;
+  transition: 0.5s !important; }
+
+.text {
+  color: white; }
+
+.boton_enviar {
+  background-color: #232323; }
+
+.centrar {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle; }
+
+header {
+  background-color: white; }
+  header li {
+    /*NAV SEPARADOS*/
+    margin: 15px; }
+
+.navbar-collapse {
+  justify-content: flex-end; }
+  .navbar-collapse a:hover {
+    color: crimson !important;
+    transition: 0.3s; }
+
+.footerBg {
+  background-color: #aca7a7;
+  margin-top: 10px;
+  padding: 30px;
+  text-align: center; }

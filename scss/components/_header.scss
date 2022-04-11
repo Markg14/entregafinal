@@ -1,0 +1,13 @@
+header{
+    background-color: white;
+    li{ /*NAV SEPARADOS*/
+        margin: 15px;
+    }
+}
+.navbar-collapse{ //NAV A LA DERECHA//
+    justify-content: flex-end;
+    a:hover{
+        color:rgb(220, 20, 60) !important;
+        transition: 0.3s;
+    }
+}

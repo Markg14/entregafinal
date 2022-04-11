@@ -1,0 +1,262 @@
+@font-face 
+    {
+    font-family: 'montserrat';
+    src: url(../assets/fonts/montserrat.ttf);
+    }
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'montserrat';
+}    
+    a{
+        color: rgb(158, 158, 158);
+    }
+    li .active{
+        color: #232323;
+    }
+    a:hover{
+        color: rgb(220, 20, 60);
+        transition: 0.5s;
+    }
+    button{ /*BOTON CONTACTANOS*/
+        border: 0px;
+        background-color: #dc143c;
+        padding: 5px;
+        color: white;
+        margin-top: 30px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(129, 13, 36);
+        transition: 0.5s;
+    }
+    nav{
+        background-color: #ffffff;
+        height: 100%;
+        width: 100%;
+    }
+    .enlace{
+        position: absolute;
+        padding: 6px 20px;
+    }
+    nav ul{
+        float: right;
+        margin-right: 40px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 70px;
+        padding: 20px 17px;
+    }
+    .checkbtn{
+        font-size: 30px;
+        color: #232323;
+        float: right;
+        line-height: 112px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    .footer1 ul{
+        display: flex;
+    }
+    .footer1 ul li{
+        list-style: none;
+    }
+    .grid{
+        display: grid;
+        grid-template-areas: "nav1 nav1"
+        "titulo titulo"
+        "section-b section-a"
+        "section-c section-c"
+        "section-d section-e"
+        "footer1 footer1"
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 112px 700px 500px 400px 400px 130px;
+        grid-auto-columns: 100%;
+        width: 100%;
+        height: 100%;
+    }
+    header{
+        grid-area: nav1;
+        background-color: rgb(194, 0, 0);
+    }
+    .titulo{
+        grid-area: titulo;
+        background-image: url(../assets/img/background_1.png);
+        width: 100%;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo h1{
+        color: white;
+        font-size: 70px;
+        text-shadow: 1px 2px 1px rgb(31, 31, 31);
+        justify-content: center;
+        align-items: center;
+    }
+    .section-a{
+        grid-area: section-a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #232323;
+        color: rgb(255, 255, 255);
+        padding: 100px;
+        margin: 0px 0px 0px 0px;
+    }
+    .section-a p{
+        font-size: 25px;
+        text-align: left;
+    }
+    .section-b{
+        grid-area: section-b;
+        background-position: center; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #232323;
+    }
+    .section-c{
+        grid-area: section-c;
+        background-image: url(../assets/img/foto21.jpg);
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-d{
+        grid-area: section-d;
+        background-color: white;
+        background-position: center; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-e{
+        grid-area: section-e;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 70px 0px 70px;
+    }
+    .footer1{
+        grid-area: footer1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #797979;
+    }
+    .footer1 ul li{
+        margin: 0px 40px 10px;
+    }
+    @media (max-width: 970px){
+        .grid{
+            display: grid;
+            grid-template-areas: "nav1"
+            "titulo"
+            "section-b"
+            "section-a"
+            "section-c"
+            "section-d"
+            "section-e"
+            "footer1"
+            ;
+            grid-template-columns: 100%;
+            grid-template-rows: 112px 500px 300px 400px 400px 200px 300px 130px;
+            grid-auto-columns: 100%;
+            width: 100%;
+            height: 100%;
+        }
+        .titulo h1{
+            font-size: 40px;
+        }
+        .section-b img{
+            width: 300px;
+        }
+        .checkbtn{
+            display: block;
+        }
+        .enlace{
+            width: 60%;
+        }
+        nav ul{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #232323;
+            top: 112px;
+            left: -100%;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+        nav ul li a{
+            font-size: 20px;
+            color: white;
+            align-items: center;
+        }
+        li a.active, li a:hover{
+            background-color: none;
+            color: #dc143c;
+        }
+        #check:checked ~ ul{
+            left:0;
+        }
+    }
+    @media (max-width: 500px){
+        .grid{
+            display: grid;
+            grid-template-areas: "nav1"
+            "titulo"
+            "section-b"
+            "section-a"
+            "section-c"
+            "section-d"
+            "section-e"
+            "footer1"
+            ;
+            grid-template-columns: 100%;
+            grid-template-rows: 112px 500px 300px 400px 200px 200px 600px 130px;
+            grid-auto-columns: 100%;
+            width: 100%;
+            height: 100%;
+        }
+        .titulo h1{
+            font-size: 30px;
+        }
+        .section-a p{
+            font-size: 20px;
+        }
+        .section-d img{
+            width: 300px;
+        }
+        .section-e{
+            font-size: 15px;
+        }
+        .footer1 ul li img{
+            width: 40px;
+        }
+        .footer1 p{
+            font-size: 12px;
+            align-items: center;
+        }
+    }
